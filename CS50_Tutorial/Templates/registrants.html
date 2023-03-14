@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 
     {% block body %}
-
+        <h1>Registrants</h1>
         <ul>
             {% for name in registrants %}
-                <li>{{ name }} is registered for {{ registrants[name] }}.</li>
+                <li>{{ name.name }} is registered for {{ name.sport }}.</li>
             {% endfor %}
         </ul>
 
